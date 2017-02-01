@@ -1,0 +1,90 @@
+<datamining>
+    <expectedTrialContent><general defaultFileSuffix="ux">
+        </general>
+            <phaseTypes names="RCycle LCycle"></phaseTypes>
+            <eventTypes names="RTO LG LTO RG RHS LHS"></eventTypes>
+            <timeseries>
+                
+                <timeSerie components="1" name="T">/</timeSerie>
+                
+                <timeSerie components="1" name="RProSupiAngle"></timeSerie>
+                <timeSerie components="1" name="LProSupiAngle"></timeSerie>
+                
+                <timeSerie components="1" name="dRProSupiAngle"></timeSerie>
+                <timeSerie components="1" name="dLProSupiAngle"></timeSerie>
+                
+                <timeSerie components="1" name="ddRProSupiAngle"></timeSerie>
+                <timeSerie components="1" name="ddLProSupiAngle"></timeSerie>
+             
+              </timeseries>
+
+              <properties>
+
+                <propertygroup name="TRIAL_INFO">
+                    <property type="String" name="CLASS"/>
+                    <property type="String" name="SIDE"/>
+                    <property type="String" name="MOVEMENT"/>
+                    <property type="String" name="TYPE"/>
+                    <property type="String" name="NOTES"/>
+                </propertygroup>
+              </properties>
+
+          </expectedTrialContent>
+          <parameters>
+              <parameter component="0" id="T1" name="T" type="max"></parameter>
+              <parameter component="0" id="T0" name="T" type="min"></parameter>
+              
+              <parameter component="0" id="RProSupiMax" name="RProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="RProSupiMin" name="RProSupiAngle" type="min"></parameter>
+              <parameter component="0" id="LProSupiMax" name="LProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="LProSupiMin" name="LProSupiAngle" type="min"></parameter>
+
+              <parameter component="0" id="dRProSupiMax" name="dRProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="dRProSupiMin" name="dRProSupiAngle" type="min"></parameter>
+              <parameter component="0" id="dLProSupiMax" name="dLProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="dLProSupiMin" name="dLProSupiAngle" type="min"></parameter>
+              
+              <parameter component="0" id="ddRProSupiMax" name="ddRProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="ddRProSupiMin" name="ddRProSupiAngle" type="min"></parameter>
+              <parameter component="0" id="ddLProSupiMax" name="ddLProSupiAngle" type="max"></parameter>
+              <parameter component="0" id="ddLProSupiMin" name="ddLProSupiAngle" type="min"></parameter>
+          </parameters>
+          
+          <scopes>
+
+              <scope id="0" name="RCycle" type="phase">
+                  
+                  <variable id="T0" name="T0"></variable>
+                  <variable id="T1" name="T1"></variable>
+                  
+                  <variable id="RProSupiMax" name="RProSupiMax"></variable>
+                  <variable id="RProSupiMin" name="RProSupiMin"></variable>
+                 
+                  <variable id="dRProSupiMax" name="dRProSupiMax"></variable>
+                  <variable id="dRProSupiMin" name="dRProSupiMin"></variable>
+                  
+                  <variable id="ddRProSupiMax" name="ddRProSupiMax"></variable>
+                  <variable id="ddRProSupiMin" name="ddRProSupiMin"></variable>
+                  
+              </scope>
+              
+              <scope id="1" name="LCycle" type="phase">
+                  
+                  <variable id="T0" name="T0"></variable>
+                  <variable id="T1" name="T1"></variable>
+                  
+                  <variable id="LProSupiMax" name="LProSupiMax"></variable>
+                  <variable id="LProSupiMin" name="LProSupiMin"></variable>
+                 
+                  <variable id="dLProSupiMax" name="dLProSupiMax"></variable>
+                  <variable id="dLProSupiMin" name="dLProSupiMin"></variable>
+                  
+                  <variable id="ddLProSupiMax" name="ddLProSupiMax"></variable>
+                  <variable id="ddLProSupiMin" name="ddLProSupiMin"></variable>
+              </scope>
+          </scopes>
+
+          <groups>
+              <group fileSuffix="c3d" id="diadochokinese" selected="true"></group>
+          </groups>
+</datamining>

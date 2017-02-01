@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View4d name="Diadochokinesis">
+    <MarkerSet name="Markers">
+        <Marker name="LELB" origin="LELB"/>
+        <Marker name="LULN" origin="LULN"/>
+        <Marker name="LRAD" origin="LRAD"/>
+        <Marker name="LFHD" origin="LFHD"/>
+        <Marker name="RELB"   origin="RELB"/>
+        <Marker name="RULN" origin="RULN"/>      
+        <Marker name="RRAD" origin="RRAD"/>        
+        <Marker name="RFHD"  origin="RFHD"/> 
+        
+        <ConnectionSet name="MarkerConnections">
+            
+            <Connection name="1"
+                        start="LRAD"
+                        end="LULN"/>
+            <Connection name="2"
+                        start="RRAD"
+                        end="RULN"/> 
+                        
+            <Connection name="3"
+                        start="RULN"
+                        end="RFHD"/> 
+            <Connection name="4"
+                        start="RRAD"
+                        end="RFHD"/> 
+            
+            <Connection name="5"
+                        start="LULN"
+                        end="LFHD"/> 
+            <Connection name="6"
+                        start="LRAD"
+                        end="LFHD"/> 
+            
+        </ConnectionSet>
+    </MarkerSet>
+    
+    <PointSet name="Joint centres">
+        <Point name="LWJC" origin="LWJC"/>
+        <Point name="RWJC" origin="RWJC"/>
+        
+        <Point name="RELB" origin="RELB"/>
+        <Point name="LELB" origin="LELB"/>
+        
+        <!--Point name="RRefEnd" origin="RRefEnd"/>
+        <Point name="LRefEnd" origin="LRefEnd"/>
+        <Point name="RPointerEnd" origin="RPointerEnd"/>
+        <Point name="LPointerEnd" origin="LPointerEnd"/-->
+         
+        <ConnectionSet name="JointCenterConnections">
+            
+             <Connection name="RArm"
+                        start="RWJC"
+                        end="RELB"/> 
+             <Connection name="LArm"
+                        start="LWJC"
+                        end="LELB"/> 
+             
+        </ConnectionSet>
+        
+    </PointSet>
+    
+    <ArrowSet name="Arrows">
+        <Arrow name="RRef"
+               start="RWJC"
+               end="RRefEnd"/>
+        <Arrow name="LRef"
+               start="LWJC"
+               end="LRefEnd"/>
+        
+        <Arrow name="RPointer"
+               start="RWJC"
+               end="RPointerEnd"/>
+        <Arrow name="LPointer"
+               start="LWJC"
+               end="LPointerEnd"/>
+    </ArrowSet>
+    
+    
+</View4d>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Sheet name="Diadochokinese Angles">
+    
+  <Pages>
+      
+    <Page name="Joint angles, velocities and accelerations" rows="4" columns="3">
+        
+        <Diagram name="ProSupiAngle" 
+                   column="0"
+                   row="0"
+                   xunit="%"
+                   yunit="deg" 
+                   diagramDescriptionDown="supi" 
+                   diagramDescriptionUp="pro" 
+                   plane="" 
+                   diagramType="xt" 
+                   diagramTitle="Pro-/Supination">
+               <Label name="RProSupiAngle"
+                    component="0"
+                    side="right"/>
+               <Label name="LProSupiAngle"
+                    component="0"
+                    side="left"/>
+        </Diagram>
+        <Diagram name="ProSupiAngleVelocity" 
+           column="1"
+           row="0"
+           xunit="%"
+           yunit="deg/s" 
+           diagramDescriptionDown="supi'" 
+           diagramDescriptionUp="pro'" 
+           plane="" 
+           diagramType="xt" 
+           diagramTitle="Pro-/Supination velocity">
+           <Label name="dRProSupiAngle"
+                  component="0" 
+                  side="right"/> 
+           <Label name="dLProSupiAngle"
+                  component="0" 
+                  side="left"/>
+         </Diagram>
+        <Diagram name="ProSupiAngleAcceleration" 
+           column="2"
+           row="0"
+           xunit="%"
+           yunit="deg/s2"  
+           diagramDescriptionDown="supi''" 
+           diagramDescriptionUp="pro''" 
+           plane="" 
+           diagramType="xt" 
+           diagramTitle="Pro-/Supination acc.">
+           <Label name="ddRProSupiAngle"
+                  component="0" 
+                  side="right"/>
+           <Label name="ddLProSupiAngle"
+                  component="0" 
+                  side="left"/>
+         </Diagram>
+        
+         <Diagram name="ProSupiAngle over T"
+                   column="0"
+                   row="1"
+                   xunit="s"
+                   yunit="deg" 
+                   diagramDescriptionDown="supi" 
+                   diagramDescriptionUp="pro" 
+                   plane="" 
+                   diagramType="xy" 
+                   diagramTitle="Pro-/Supination">
+               <Label name="RProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="RProSupiAngle"
+                    side="right"/>
+               <Label name="LProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="LProSupiAngle"
+                    side="left"/>
+         </Diagram>
+         
+         <Diagram name="ProSupiAngle velocity over T"
+                   column="1"
+                   row="1"
+                   xunit="s"
+                   yunit="deg/s" 
+                   diagramDescriptionDown="supi'" 
+                   diagramDescriptionUp="pro'" 
+                   plane="" 
+                   diagramType="xy" 
+                   diagramTitle="Pro-/Supination velocity">
+               <Label name="dRProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="dRProSupiAngle"
+                    side="right"/>
+               <Label name="dLProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="dLProSupiAngle"
+                    side="left"/>
+         </Diagram>
+         
+         <Diagram name="ProSupiAngle acceleration over T"
+                   column="2"
+                   row="1"
+                   xunit="s"
+                   yunit="deg/s2" 
+                   diagramDescriptionDown="supi''" 
+                   diagramDescriptionUp="pro''" 
+                   plane="" 
+                   diagramType="xy" 
+                   diagramTitle="Pro-/Supination acc.">
+               <Label name="ddRProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="ddRProSupiAngle"
+                    side="right"/>
+               <Label name="ddLProSupiAngle"
+                    xlabel="T"
+                    xstartvalue="true"
+                    ylabel="ddLProSupiAngle"
+                    side="left"/>
+         </Diagram>
+         
+         <!-- third row -->
+         
+         <Diagram name="ProSupiAnglePhase" 
+                   column="0"
+                   row="2"
+                   xunit="deg"
+                   yunit="deg/s" 
+                   diagramDescriptionDown="" 
+                   diagramDescriptionUp="" 
+                   plane="" 
+                   diagramType="phase" 
+                   diagramTitle="Pro-/Supination Phasen">
+               <Label name="RProSupiAngle"
+                    component="0"
+                    side="right"/>
+               <Label name="LProSupiAngle"
+                    component="0"
+                    side="left"/>
+        </Diagram>
+        
+        <Diagram name="ProSupiAnglePhaseAngle" 
+                   column="1"
+                   row="2"
+                   xunit="%"
+                   yunit="deg" 
+                   diagramDescriptionDown="" 
+                   diagramDescriptionUp="" 
+                   plane="" 
+                   diagramType="phaseangle" 
+                   diagramTitle="Pro-/Supination phi">
+               <Label name="RProSupiAngle"
+                    component="0"
+                    side="right"/>
+               <Label name="LProSupiAngle"
+                    component="0"
+                    side="left"/>
+        </Diagram>
+        
+       
+    </Page>
+    
+    
+  </Pages>
+      
+  <!-- Gruppen von Trials z.B. schnelle und langsame Gehdurchgänge
+       definieren und die zugehörigen Farben für jedweils linke und
+       rechte Seite sowie die zugehörigen Normdaten -->
+  <Groups>
+        <DefaultGroup normData="abc.gnm"/>
+  </Groups>
+  
+  <View>
+     <Events>
+          <Event name="RHS"/>
+          <Event name="RTO"/>
+     </Events>
+     <Phases>
+         <Phase name="RCycle" startEvent="RHS" endEvent="RTO"/>
+     </Phases>
+     <Alignment event="RHS" phase="RCycle" normalization="RCycle"/>
+  </View>
+  
+</Sheet>

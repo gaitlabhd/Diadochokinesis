@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelSet name="Winkel">
+     <Labels name="Angles">
+        <Label name="RProSupiAngle"/>
+        <Label name="LProSupiAngle"/>
+        
+        <Label name="dRProSupiAngle"/>
+        <Label name="dLProSupiAngle"/>
+        
+        <Label name="ddRProSupiAngle"/>
+        <Label name="ddLProSupiAngle"/>
+     </Labels>
+</LabelSet>

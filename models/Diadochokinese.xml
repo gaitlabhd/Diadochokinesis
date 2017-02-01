@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   :    Diadochokinese V1.1
+    Author     :    Oliver Rettig, 1VJ 2014
+   
+    Description: - Umwendbewegung wird als "Pro/Supinationswinkel" bestimmt
+                 - Winkel als Projektion auf eine "grob" bestimmte Drehachse
+                 - "Supination" ist negativ
+                 - Annahmen: Unterarm wird horizontal gehalten, keine ularduction im Handgelenk
+
+                 
+    Verbesserungsmöglichkeiten:
+    
+                 - Bestimmung einer funktionellen Drehachse und Bestimmung der Winkel
+                   nach Projektion in eine Ebene senkrecht zu dieser Achse
+                   
+-->
+<CalcModel version="1.0">
+
+    <Real name="T">t*1.0</Real>
+    
+    <SubModel name="RightSide"
+              includes="right">
+         <Phase name="RCycle" startEvent="RHS" endEvent="RTO" process="post"/>
+         <Point name="RWJC">(RULN+RRAD)/2.0</Point>
+         <!-- rechte Hand Regel - zeigt nach innen -->
+         <Vector name="RRef">normalize(RWJC-RELB)*normalize(vec(0.0,0.0,-1.0))</Vector>
+         <!-- nach innen -->
+         <!--Vector name="RPointer">normalize(RRAD-RULN)*normalize(RFHD-RULN)</Vector-->
+         <Vector name="RPointer">normalize(RRAD-RULN)*normalize(RWJC-RELB)</Vector>
+         <ProjectionAngle name="RProSupi"
+                          Axis="normalize(RWJC-RELB)"
+                          FirstVector="RPointer*1.0"
+                          SecondVector="RRef*1.0"
+                          unsigned="false"
+                          useOffset="false"/>
+         <Point name="RRefEnd">RWJC+normalize(RRef)*length(RRAD-RWJC)</Point>
+         <Point name="RPointerEnd">RWJC+normalize(RPointer)*length(RRAD-RWJC)</Point>
+    </SubModel>
+     
+    <SubModel name="LeftSide"
+               includes="left">
+         <Phase name="LCycle" startEvent="LHS" endEvent="LTO" process="post"/>
+         <Point name="LWJC">(LULN+LRAD)/2.0</Point>
+         <!-- rechte Hand Regel - zeigt nach innen -->
+         <Vector name="LRef">normalize(vec(0.0,0.0,-1.0))*normalize(LWJC-LELB)</Vector>
+         <!-- nach innen -->
+         <!--Vector name="LPointer">normalize(LULN-LRAD)*normalize(LFHD-LULN)</Vector-->
+         <Vector name="LPointer">normalize(LULN-LRAD)*normalize(LWJC-LELB)</Vector>
+         <ProjectionAngle name="LProSupi"
+                          Axis="normalize(LWJC-LELB)"
+                          SecondVector="LPointer*1.0"
+                          FirstVector="LRef*1.0"
+                          unsigned="false"
+                          useOffset="false"/>
+         <Point name="LRefEnd">LWJC+normalize(LRef)*length(LRAD-LWJC)</Point>
+         <Point name="LPointerEnd">LWJC+normalize(LPointer)*length(LRAD-LWJC)</Point>
+    </SubModel>
+</CalcModel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelSet name="Markers and angles">
+     <Labels basefile="true">
+        <Label name="T"/>
+        <Label name="RProSupiAngle" optional="true" differentiations="2" mathType="REAL"/>
+        <Label name="RWJC" optional="true"/>
+        <Label name="LProSupiAngle" optional="true" differentiations="2" mathType="REAL"/>
+        <Label name="LWJC" optional="true"/>
+        
+        <Label name="LELB"/>
+        <Label name="LULN" optional="true"/>
+        <Label name="LRAD" optional="true"/>
+        <Label name="LFHD" optional="true"/>
+       
+        <Label name="RELB"/>
+        <Label name="RULN" optional="true"/>
+        <Label name="RRAD" optional="true"/>
+        <Label name="RFHD" optional="true"/>
+        
+        <Label name="RRefEnd" optional="true"/>
+        <Label name="LRefEnd" optional="true"/>
+        
+        <Label name="RPointerEnd" optional="true"/>
+        <Label name="LPointerEnd" optional="true"/>
+     </Labels>
+    
+</LabelSet>

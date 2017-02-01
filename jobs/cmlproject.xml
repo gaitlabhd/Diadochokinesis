@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<CalcMLProcessConfig name="Diadochokinese"
+                     version="1.0"
+                     defaultmodel="Diadochokinese.xml"
+                     defaultmarkerset="Input.xml"
+                     defaultconstants="constants.properties"
+                     defaultview="StickFigure.xml"
+                     useEventsFromSessionMetaDataFile="false">
+
+   <CalcGroups sequence="diadochokinese">
+
+    <CalcGroup name="diadochokinese"
+               view="StickFigure.xml">
+        <identification>
+            <entry key="TYPE">Diadochokinese</entry>
+            <entry key="CLASS">Dynamic</entry>
+            <!--entry key="CLASS">EllbowFlex/Ext|ShoulderAnte/Retro|ShoulderAbd/Add|Dynamic|proprio</entry-->
+        </identification>
+        <process>
+            <entry key="POINTS">true</entry>
+            <entry key="EVENTS">true</entry>
+            <!--entry key="ANALOG">true</entry-->
+        </process>
+        <output labelset="Output.xml"
+                handlerclass="de.orat.motionDataConverter.MotionDataOutputHandler">
+            <!--entry key="useProjectsOutputFolder">true</entry-->
+            <!-- maximale Zahl an Stellen -->
+            <entry key="integerDigits">10</entry>
+            <!-- maximale Zahl an Nachkommastellen -->
+            <entry key="fractionDigits">5</entry>
+        </output>
+        <!--output labelset="Output.xml" dir=""
+                handlerclass="de.orat.motionDataConverter.MotionDataOutputHandler"/-->
+    </CalcGroup>
+
+  </CalcGroups>
+     
+  <Switches used="left right">
+
+      <switch name="left">
+        <entry key="SIDE">bds|links|Side L|Both</entry>
+      </switch>
+      <switch name="right">
+        <entry key="SIDE">bds|rechts|Side R|Both</entry>
+      </switch>
+      
+  </Switches>
+  
+</CalcMLProcessConfig>

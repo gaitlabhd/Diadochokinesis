@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelSet name="Marker">
+  <Labels basefile="true">
+      <Filter name="zero2nan"/>
+
+      <Label name="LELB"/>
+      <Label name="LULN" optional="true"/>
+      <Label name="LRAD" optional="true"/>
+      <Label name="LFHD" optional="true"/>
+       
+      <Label name="RELB"/>
+      <Label name="RULN" optional="true"/>
+      <Label name="RRAD" optional="true"/>
+      <Label name="RFHD" optional="true"/>
+  </Labels> 
+
+</LabelSet>

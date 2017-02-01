@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LabelSet name="Angles and derivations">
+     <Labels name="RCycle">
+        <Label name="RProSupiAngle"/>
+        <Label name="dRProSupiAngle"/>
+        <Label name="ddRProSupiAngle"/>
+     </Labels>
+     <Labels name="LCycle">
+        <Label name="LProSupiAngle"/>
+        <Label name="dLProSupiAngle"/>
+        <Label name="ddLProSupiAngle"/>
+     </Labels>
+     
+     <MetaData>
+       <Label name="PatientName" defaultValue="unknown, unknown" mathType="CELL_STRING"/>
+       <Label name="PatientID" defaultValue="12345" mathType="CELL_STRING"/>
+       <Label name="ExamDate" defaultValue="01-Jul-2016" mathType="CELL_STRING"/>
+       <Label name="GroupNo" defaultValue="1" mathType="REAL"/>
+       <Label name="ExportID" defaultValue="User: patikasd | Computer: GaitLabHD\GLH02539" mathType="STRING"/>
+       <Label name="CreationDate" defaultValue="05-Oct-2004 18:26:14" mathType="STRING"/>
+       <Label name="OriginalFileName" defaultValue="H:\Rohdaten_Imported\19930514\50028" mathType="STRING"/>
+       
+       <!-- events and tdp-->
+       <Label name="MeanRightFootOff" defaultValue="68.77" mathType="REAL"/>
+       <Label name="StdRightFootOff"  defaultValue="4.887" mathType="REAL"/>
+       
+       <Label name="MeanRightOppositeFootOff"  defaultValue="14.5" mathType="REAL"/>
+       <Label name="StdRightOppositeFootOff"  defaultValue="3.697" mathType="REAL"/>
+       
+       <Label name="MeanRightOppositeFootContact"  defaultValue="49.25" mathType="REAL"/>
+       <Label name="StdRightOppositeFootContact"  defaultValue="0.9574" mathType="REAL"/>
+       
+       <Label name="MeanRightSingleSupport"  defaultValue="34.75" mathType="REAL"/>
+       <Label name="StdRightSingleSupport"  defaultValue="2.872" mathType="REAL"/>
+       <Label name="MeanRightDoubleSupport"  defaultValue="34.02" mathType="REAL"/>
+       <Label name="StdRightDoubleSupport"  defaultValue="7.621" mathType="REAL"/>
+       
+       <Label name="MeanRightStepLength"  defaultValue="0.4924" mathType="REAL"/>
+       <Label name="StdRightStepLength"  defaultValue="0.1031" mathType="REAL"/>
+
+       <Label name="MeanRightStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="MeanRightStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="StdRightStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="MeanRightStepTime"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="StdRightStepTime"  defaultValue="No Data" mathType="STRING"/>
+       
+       
+       <Label name="MeanLeftFootOff" defaultValue="68.77" mathType="REAL"/>
+       <Label name="StdLeftFootOff"  defaultValue="4.887" mathType="REAL"/>
+       
+       <Label name="MeanLeftOppositeFootOff"  defaultValue="14.5" mathType="REAL"/>
+       <Label name="StdLeftOppositeFootOff"  defaultValue="3.697" mathType="REAL"/>
+       
+       <Label name="MeanLeftOppositeFootContact"  defaultValue="49.25" mathType="REAL"/>
+       <Label name="StdLeftOppositeFootContact"  defaultValue="0.9574" mathType="REAL"/>
+       
+       <Label name="MeanLeftSingleSupport"  defaultValue="34.75" mathType="REAL"/>
+       <Label name="StdLeftSingleSupport"  defaultValue="2.872" mathType="REAL"/>
+       <Label name="MeanLeftDoubleSupport"  defaultValue="34.02" mathType="REAL"/>
+       <Label name="StdLeftDoubleSupport"  defaultValue="7.621" mathType="REAL"/>
+       
+       <Label name="MeanLeftStepLength"  defaultValue="0.4924" mathType="REAL"/>
+       <Label name="StdLeftStepLength"  defaultValue="0.1031" mathType="REAL"/>
+
+       <Label name="MeanLeftStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="MeanLeftStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="StdLeftStepWidth"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="MeanLeftStepTime"  defaultValue="No Data" mathType="STRING"/>
+       <Label name="StdLeftStepTime"  defaultValue="No Data" mathType="STRING"/>
+<!--
+
+[MeanSpeed]
+0.5166
+[StdSpeed]
+0.1639
+[MeanCadence]
+76.07
+[StdCadence]
+12.4
+[MeanStrideTime]
+1.61
+[StdStrideTime]
+0.2803
+       
+       [MeanLeftFootOff]
+68.63
+[StdLeftFootOff]
+4.36
+[MeanLeftOppositeFootOff]
+19.5
+[StdLeftOppositeFootOff]
+5.196
+[MeanLeftOppositeFootContact]
+52.5
+[StdLeftOppositeFootContact]
+0.5774
+[MeanLeftSingleSupport]
+33
+[StdLeftSingleSupport]
+4.83
+[MeanLeftDoubleSupport]
+35.63
+[StdLeftDoubleSupport]
+8.907
+[MeanLeftStepLength]
+0.2858
+[StdLeftStepLength]
+0.06877
+[MeanLeftStepWidth]$
+No Data
+[StdLeftStepWidth]$
+No Data
+[MeanLeftStepTime]
+0.5396
+[StdLeftStepTime]
+0.07268-->
+
+  </MetaData>
+</LabelSet>
